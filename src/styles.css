@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+/* Esto es para forzar el diseño si Tailwind falla en compilar */
+:root {
+  background-color: #0a0a0a !important;
+  color: white !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  font-family: sans-serif;
+}
+
+/* Clases manuales por si Tailwind sigue dormido */
+.min-h-screen { min-height: 100vh; }
+.bg-stone-950 { background-color: #0a0a0a; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
